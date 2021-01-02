@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Barlow+Semi+Condensed&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cookie&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Barlow+Semi+Condensed&family=Lobster+Two&family=Teko:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap');
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+header{
+    background-color: white;
+    width: 100%;
+    height: 1000px;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 40px;
+    align-items: center;
+    position: fixed;
+    z-index: 3;
+
+}
+.comp-name{
+    border-radius: 100%;
+    background-image: url(pic/ppe.jpg);
+    background-size: cover;
+    width: 100px;
+    height: 100px;
+    font-family: 'Abel', sans-serif;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-family: 'Lobster Two', cursive;
+    font-family: 'Teko', sans-serif;
+    font-size: 20px;
+    color: #ff8c1a;
+}
+.nav-links li{
+    list-style-type: none;
+    display: inline-block;
+    padding-right: 40px;
+    padding-top: 5px;
+    
+}
+.nav-links li a{
+    text-decoration: none;
+    color: grey;
+    cursor: pointer;   
+    padding: 5px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    
+}
+.sec1{
+    position: relative;
+    width: 100%;
+    height: 653.5px;
+    background: url(pic/print.jpg);
+    background-size: cover;
+    top: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.dark-cover{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+}
+[sec1-prop]{
+    position: relative;
+    width: 95%;
+    height: 60px;
+    margin-top: 10px;
+    text-align: center;
+    line-height: 60px;
+    color: white;
+    font-family: 'Abel', sans-serif;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+}
+[sec1-prop] p{
+    font-size: 30px;
+}
+[sec1-prop] h1{
+    font-size: 70px;
+}
+.sec1-con3{
+    font-size: 10px;
+    font-family: 'Cookie', cursive;
+}
+input[type="button"]{
+    cursor: pointer;
+    border: none;
+    background-color: #ff8c1a;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 25px;
+    padding: 10px;
+    width: 150px;
+    height: 50px;
+    color: white;
+    font-family: 'Abel', sans-serif;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-size: 20px;
+}
+input#bh:hover{
+    background-color: white;
+    border: 1px solid #ff8c1a;
+    color: #ff8c1a;
+    transition: all 0.5s ease;
+}
+.sec2{
+    border: 1px solid black;
+    width: 100%;
+    height: 400px;
+    display: flex;
+    margin-top: 90px;
+}
+.sec3{
+    border: 1px solid black;
+    width: 100%;
+    height: 400px;
+    display: flex;
+}
+
+
+/* For the burger icon*/
+.burger{
+    display: none;
+    cursor: pointer;
+}
+.burger div{
+    width: 25px;
+    height: 3px;
+    border-radius: 1px;
+    background-color: black;
+    margin: 5px;
+    transition: all 0.3s ease;
+
+}
+/* DROPDOWN MENU */
+.mobile-nav {
+    display: none;
+}
+@media screen and (max-width: 1100px){
+    [sec1-prop] p{
+        font-size: 20px;
+    }
+    [sec1-prop] h1{
+        font-size: 50px;
+    }
+    .sec1-con3{
+        font-size: 5px;
+    }
+}
+@media screen and (max-width: 800px) {
+.mobile-nav{
+    display: none;
+}
+.pc-nav{
+    display: none;
+}
+.burger{
+    position: relative;
+    top: 0;
+    left: 13%;
+    right: 0;
+    bottom: 0;
+    display: block;
+}
+.sec1{
+    position: relative;
+    height: 350px;
+    background-image: url(pic/print.jpg);
+    background-size: 100% 100%;
+    top: 90px;
+}
+.dark-cover{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.6);
+}
+[sec1-prop]{
+    margin-top: 0;
+}
+[sec1-prop] p{
+    font-size: 20px;
+}
+[sec1-prop] h1{
+    font-size: 31px;
+}
+.sec1-con3{
+    font-size: 5px;
+    font-family: 'Cookie', cursive;
+}
+    }
+    @media screen and (max-width: 400px) {
+        .burger{
+            position: relative;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            display: block;
+        }
+    }
+    @media screen and (max-width: 500px) {
+        [sec1-prop] p{
+            font-size: 15px;
+        }
+        [sec1-prop] h1{
+            font-size: 20px;
+        }
+        .sec1-con3{
+            font-size: 4px;
+            font-family: 'Cookie', cursive;
+        }       
+    }
