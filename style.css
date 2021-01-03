@@ -210,7 +210,7 @@ input[type="button"]{
         .burger{
             position: relative;
             top: 0;
-            left: 50px;
+            left: 110px;
             right: 0;
             bottom: 0;
             display: block;
@@ -233,5 +233,20 @@ input[type="button"]{
             right: 0;
             bottom: 0;
             display: block;
-        }  
+        }
+    [sec1-prop]{
+        word-wrap: break-word;
+        height: 40px;
+    }
+    .sec1-con3{
+        font-size: 1px;
+    }
+    }
+@media screen and (max-width: 310px) {
+    [sec1-prop] h1{
+        font-size: 15px;
+    }
+    .burger{
+        left: 0px;
+    }  
     }
