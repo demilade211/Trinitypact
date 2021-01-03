@@ -235,11 +235,12 @@ input[type="button"]{
             display: block;
         }
     [sec1-prop]{
+        line-height: 20px;
         word-wrap: break-word;
         height: 40px;
     }
     .sec1-con3{
-        font-size: 1px;
+        font-size: 2px;
     }
     }
 @media screen and (max-width: 310px) {
