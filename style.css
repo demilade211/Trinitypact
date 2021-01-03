@@ -164,7 +164,7 @@ input#bh:hover{
 .burger{
     position: relative;
     top: 0;
-    left: 13%;
+    left: 30%;
     right: 0;
     bottom: 0;
     display: block;
@@ -186,6 +186,7 @@ input#bh:hover{
 }
 [sec1-prop]{
     margin-top: 0;
+    height: 50px;
 }
 [sec1-prop] p{
     font-size: 20px;
@@ -197,18 +198,23 @@ input#bh:hover{
     font-size: 5px;
     font-family: 'Cookie', cursive;
 }
+input[type="button"]{
+    text-align: center;
+    font-size: 15px;
+    border-radius: 25px;
+    width: 140px;
+    height: 40px;
+}
     }
-    @media screen and (max-width: 400px) {
+    @media screen and (max-width: 500px) {
         .burger{
             position: relative;
             top: 0;
-            left: 0;
+            left: 50px;
             right: 0;
             bottom: 0;
             display: block;
         }
-    }
-    @media screen and (max-width: 500px) {
         [sec1-prop] p{
             font-size: 15px;
         }
@@ -217,6 +223,15 @@ input#bh:hover{
         }
         .sec1-con3{
             font-size: 4px;
-            font-family: 'Cookie', cursive;
-        }       
+        }     
+    }
+    @media screen and (max-width: 400px) {
+        .burger{
+            position: relative;
+            top: 0;
+            left: 50px;
+            right: 0;
+            bottom: 0;
+            display: block;
+        }  
     }
