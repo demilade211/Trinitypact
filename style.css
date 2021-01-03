@@ -236,7 +236,6 @@ input[type="button"]{
         }
     [sec1-prop]{
         line-height: 20px;
-        word-wrap: break-word;
         height: 40px;
     }
     .sec1-con3{
