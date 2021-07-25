@@ -154,7 +154,7 @@ input#bh:hover{
     background-color:  #f2f2f2;
 }
 .in-sec{
-    height: 500px;
+    height: auto;
     text-align: center;
     margin: 20px;
 }
@@ -162,7 +162,12 @@ input#bh:hover{
     margin-top: 40px;
     color:  #ff8c1a;
     font-size: 3.5vmax;
-    text-align: start;
+    text-align: center;
+}
+.in-sec h3{
+    margin-top: 40px;
+    color: #004080;
+    text-align: center;
 }
 .in-sec p{
     margin-top: 40px;
@@ -251,6 +256,7 @@ span{
     height: auto;
 }
 .copyright p{
+    margin-top: 20px;
     text-align: center;
 }
 
@@ -264,7 +270,7 @@ span{
     width: 25px;
     height: 3px;
     border-radius: 1px;
-    background-color: black;
+    background-color: #004080;
     margin: 5px;
     transition: all 0.3s ease;
 
@@ -276,6 +282,33 @@ span{
 @media screen and (max-width: 800px) {
 .mobile-nav{
     display: none;
+}
+.mobile-nav {
+    background-color:white;
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    right: 0;
+    top: 90px;
+    width: 55%;
+    height: 550px;
+    align-content: space-between;
+    transition: transform 0.5s ease-in;
+    z-index: 2;
+    text-align: center;
+}
+.mobile-nav li{
+    padding: 20px 0;
+    width: 100%;
+    margin: 0;
+    opacity: 0;
+    padding-bottom: 5px;
+    list-style-type: none;
+}
+.mobile-nav li a{
+    text-decoration: none;
+    color: #004080;
+    font-family: 'Source Sans Pro', sans-serif;
 }
 .pc-nav{
     display: none;
@@ -307,10 +340,37 @@ span{
     padding-bottom: 20px;
     grid-template-columns: 100%;
 }
+.in-sec h2{
+    text-align: center;
+}
+.in-sec p{
+    text-align: center;
+}
 .container{
     grid-template-columns: 100%;
 }
 .footer{
+    margin-top: 40px;
+    text-align: center;
     flex-direction: column;
 }
+    }
+    @keyframes navLinkFade{
+        from{
+            opacity: 0;
+            transform: translateX(50px);
+        }
+        to{
+            opacity: 1;
+            transform: translateX(0px);
+        }
+    }
+    .toggle .line1{
+        transform: rotate(-45deg) translate(-5px,6px);
+    }
+    .toggle .line2{
+        opacity: 0;
+    }
+    .toggle .line3{
+        transform: rotate(45deg) translate(-5px,-6px);
     }
